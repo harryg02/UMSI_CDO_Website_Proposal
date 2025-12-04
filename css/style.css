@@ -55,10 +55,11 @@ header img {
 
 section {
      padding: 20px 0;
+     margin: 0 20px 0 20px;
 }
 
 main {
-     max-width: 1500px;
+     max-width: 1530px;
      margin: auto;
 }
 
@@ -134,7 +135,7 @@ img {
 
 .quick-links div {
      display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-columns: 1fr 1fr;
      gap: 20px;
 }
 
@@ -340,13 +341,7 @@ footer a:visited {
 }
 
 @media only screen and (min-width: 768px) {
-     nav ul {
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-     }
-     main {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-     }
+
      aside,
      section {
           padding: 30px;
@@ -360,24 +355,24 @@ footer a:visited {
      .row1Span2 {
           grid-row: 1 / span 2;
      }
-     aside {
-          grid-column: 4 / span 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-     }
-
-     aside .tabs {
-          display: grid;
-          grid-template-columns: 1fr;
+     .quick-links div {
+          grid-template-columns: 1fr 1fr 1fr;
      }
 }
 
 @media only screen and (min-width: 1024px) {
+     main {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
      header {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
+     }
+
+     section {
+          margin: 0;
      }
 }
