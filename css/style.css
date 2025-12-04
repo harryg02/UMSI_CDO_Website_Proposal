@@ -1,0 +1,346 @@
+/*Your Code Here*/
+
+* {
+     font-family: "Atkinson Hyperlegible", sans-serif;
+     font-size: 16px;
+     line-height: 1.3;
+     letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+     font-optical-sizing: auto;
+     color: #00274C;
+     padding: 10px 0 10px 0;
+}
+
+h1 {
+     font-size: 34px;
+     font-weight: lighter;
+}
+
+h2 {
+     font-size: 24px;
+}
+
+h3 {
+     font-size: 20px;
+}
+
+h4 {
+     font-size: 18px;
+}
+
+li {
+     padding: 10px;
+     line-height: 23px;
+     /* https://www.w3schools.com/cssref/tryit.php?filename=trycss_list-style-position */
+     list-style-position: inside;
+}
+
+p {
+     padding: 20px 10px;
+     line-height: 23px;
+     font-size: 16px;
+}
+
+header img {
+     width: 50px;
+     height: 50px;
+     padding: 10px;
+}
+
+section {
+     padding: 20px 0;
+}
+
+main {
+     max-width: 1500px;
+     margin: auto;
+}
+
+img {
+     object-fit: contain;
+}
+
+.site-branding h3 {
+     font-family: "Oswald", sans-serif;
+     font-weight: 500;
+}
+
+#welcome {
+     /* background-image: url('../images/UMSI_CampusFall_UMSIBackpack_02.jpg'); */
+     /* background-size: cover; */
+     min-height: 50vh;
+     display: flex;
+     /* grid-template-columns: 1fr 1fr; */
+     justify-content: center;
+     align-items: center;
+     /* max-width: 600px; */
+}
+
+#welcome img {
+     height: auto;
+     max-height: 250px;
+     flex: 2;
+}
+
+.welcome-text {
+     padding-left: 50px;
+     display: block;
+     flex: 3;
+}
+
+.site-branding {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+}
+
+.quick-links {
+     /* display: flex; */
+     /* flex-direction: column; */
+     align-content: center;
+}
+
+.quick-links h2 {
+     font-size: 20px;
+}
+
+.quick-links div {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 20px;
+}
+
+.quick-links div a {
+     display: block;
+     /* background-color: #d8edff; */
+     padding-bottom: 30px;
+     text-decoration: none;
+     border-radius: 10px;
+     color: #00274C;
+     text-align: center;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
+}
+
+.quick-links div a h3 {
+     font-size: 16px;
+     padding: 0 20px 0 20px;
+     font-weight: normal;
+}
+
+.quick-links div a img {
+     /* object-fit: contain; */
+     max-height: 100px;
+     padding: 30px 0 30px 0;
+}
+
+.quick-links div a ul{
+     /* display: none; */
+     transition: opacity 0.3s ease-out;
+     opacity: 0;
+     overflow: hidden;
+     height: 0;
+}
+
+.quick-links div a:hover ul,
+.quick-links div a:focus ul {
+     /* display: block; */
+     opacity: 1;
+     min-height: 196px;
+     align-content: center;
+     height: auto;
+     position: absolute;
+     background-color: #fff;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
+     padding: 20px;
+     margin: 0;
+     border-radius: 10px;
+     width: 140px;
+}
+
+.quick-links div a ul li{
+     display: block;
+     padding: 5px;
+     line-height: 100%;
+}
+
+
+.button {
+     margin-top: 20px;
+     border: none;
+     /* font-weight: 600; */
+     background-color:  #FFCB05;
+     color: #00274C;
+     border-radius: 90px;
+     padding: 10px 20px 10px 20px;
+     text-decoration: none;
+     display: inline-block;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
+}
+
+iframe,
+img {
+     width: 100%;
+}
+
+nav ul {
+     text-align: left;
+     display: flex;
+     /* display: grid; */
+     /* grid-template-columns: 1fr 1fr; */
+}
+
+nav li {
+     text-align: center;
+}
+
+nav a {
+     /* font-weight: bold; */
+     text-decoration: none;
+     color: #00274C;
+     padding: 10px;
+}
+
+nav a.highlighted {
+     border-bottom: 2px solid #00274C;
+}
+
+.skip {
+     position: absolute;
+     top: -65px;
+     background-color: #FFCB05;
+     padding: 10px;
+}
+
+
+
+.skip:focus {
+     position: absolute;
+     top: 25px;
+}
+
+
+.container {
+     padding: 10px;
+}
+
+.tabs {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+}
+
+.tabs a {
+     text-decoration: none;
+     padding: 20px 10px;
+     /* font-weight: 600; */
+     color: #00274C;
+     text-align:center;
+}
+
+/* Source: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
+.tabs a:nth-child(1) {
+     background-color: #d8edff;
+}
+
+.tabs a:nth-child(2) {
+     background-color: #00274c;
+     color: #d8edff;
+}
+
+.tabs a:nth-child(3) {
+     background-color: #9a3324;
+     color: #fff;
+}
+
+.tabs a:nth-child(4) {
+     background-color: #ffcb05;
+}
+
+.tabs a:nth-child(5) {
+     background-color: #a9bfef;
+}
+
+.tabs a:nth-child(6) {
+     background-color: #702082;
+     color: #fff;
+}
+
+footer {
+     background-color: #00274C;
+     color: #fff;
+}
+
+footer a:visited {
+     color: #FFCB05;
+}
+
+.notfound {
+     grid-column: 1 / -1;
+     display: flex;
+     align-items: center;
+     min-height: 80vh;
+     flex-direction: column;
+     background-color: #00274C;
+     justify-content: center;
+}
+
+.notfound * {
+     color: #FFCB05;
+}
+
+.notfound h1 {
+     font-size: 80px;
+}
+
+.notfound a {
+     background-color: #FFCB05;
+     color: #00274C;
+     padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+     nav ul {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+     main {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+     aside,
+     section {
+          padding: 30px;
+     }
+     .column1Span2 {
+          grid-column: 1 / span 2;
+     }
+     .column3Span2 {
+          grid-column: 3 / span 2;
+     }
+     .row1Span2 {
+          grid-row: 1 / span 2;
+     }
+     aside {
+          grid-column: 4 / span 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+     }
+
+     aside .tabs {
+          display: grid;
+          grid-template-columns: 1fr;
+     }
+}
+
+@media only screen and (min-width: 1024px) {
+     header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+     }
+}
