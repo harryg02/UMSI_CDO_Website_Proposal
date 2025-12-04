@@ -41,7 +41,7 @@ li {
 }
 
 p {
-     padding: 20px 10px;
+     padding: 10px 0 10px 0;
      line-height: 23px;
      font-size: 16px;
 }
@@ -180,6 +180,15 @@ img {
      text-decoration: none;
      display: inline-block;
      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
+}
+
+.card {
+     background-color: #fff;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
+     padding: 30px;
+     margin: 20px;
+     height: auto;
+     border-radius: 10px;
 }
 
 iframe,
