@@ -70,6 +70,20 @@ img {
      font-weight: 500;
 }
 
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  padding: 15px 10px 15px 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
+}
+
+.nav-dropdown li a:hover {
+     border-bottom: 2px solid #00274C;
+}
+
 #welcome {
      /* background-image: url('../images/UMSI_CampusFall_UMSIBackpack_02.jpg'); */
      /* background-size: cover; */
