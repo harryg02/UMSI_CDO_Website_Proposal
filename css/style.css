@@ -95,14 +95,11 @@ img {
 }
 
 #welcome {
-     /* background-image: url('../images/UMSI_CampusFall_UMSIBackpack_02.jpg'); */
-     /* background-size: cover; */
      min-height: 50vh;
      display: flex;
-     /* grid-template-columns: 1fr 1fr; */
+     flex-direction: column;
      justify-content: center;
-     align-items: center;
-     /* max-width: 600px; */
+     align-items: left;
 }
 
 #welcome img {
@@ -112,9 +109,10 @@ img {
 }
 
 .welcome-text {
-     padding-left: 50px;
-     display: block;
-     flex: 3;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
 }
 
 .site-branding {
@@ -342,7 +340,16 @@ footer a:visited {
 
 @media only screen and (min-width: 768px) {
 
-     aside,
+     #welcome {
+          flex-direction: row;
+          align-items: center;
+     }
+     .welcome-text {
+          display: flex;
+          padding-left: 50px;
+          align-items: flex-start;
+          text-align: left;
+}
      section {
           padding: 30px;
      }
