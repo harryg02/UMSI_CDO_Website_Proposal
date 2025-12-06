@@ -91,12 +91,15 @@ img {
      background-color: white;
      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
      border: transparent;
+     color: #00274C;
 }
 
 .nav-dropdown {
-  position: absolute;
+  /* position: absolute; */
   z-index: 1;
   display: none;
+  /* display: flex; */
+  align-items: center;
   padding: 15px 10px 15px 10px;
   background-color: white;
   border-radius: 10px;
@@ -232,14 +235,18 @@ img {
 }
 
 nav ul {
-     text-align: left;
+     text-align: center;
      display: flex;
-     /* display: grid; */
-     /* grid-template-columns: 1fr 1fr; */
+     flex-direction: column;
+     align-items: center;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
 }
 
 nav li {
-     text-align: left;
+     /* text-align: left; */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
 
 nav a {
@@ -362,7 +369,7 @@ footer a:visited {
           padding-left: 50px;
           align-items: flex-start;
           text-align: left;
-}
+     }
      section {
           padding: 30px;
      }
@@ -378,6 +385,19 @@ footer a:visited {
      .quick-links div {
           grid-template-columns: 1fr 1fr 1fr;
      }
+     .menu-button {
+          display: none;
+     }
+     nav ul {
+          text-align: left;
+          flex-direction: row;
+          box-shadow: none;
+     }
+     .nav-dropdown {
+          display: none;
+          position: fixed;
+     }
+
 }
 
 @media only screen and (min-width: 1024px) {
