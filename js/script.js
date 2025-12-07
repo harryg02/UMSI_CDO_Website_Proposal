@@ -23,11 +23,11 @@
 })(jQuery); // end jQuery
 
 function toggleMenu() {
-  var x = document.querySelector(".menu");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  var menu = document.querySelector(".menu");
+  if (menu.style.display != "block") {
+    menu.style.display = "block";
   } else {
-    x.style.display = "none";
+    menu.style.display = "none";
   }
 }
 

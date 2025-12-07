@@ -231,6 +231,12 @@ a {
      border-radius: 0px;
 }
 
+.resources section{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
 iframe,
 img {
      width: 100%;
@@ -511,5 +517,8 @@ footer a:visited {
           border-radius: 10px;
           width: 100%;
           top: 0;
+     }
+     .resources section{
+          gap: 40px;
      }
 }
