@@ -242,9 +242,12 @@ nav li {
      align-items: stretch;
 }
 
+a {
+     text-decoration: none;
+}
+
 nav a {
      /* font-weight: bold; */
-     text-decoration: none;
      color: #00274C;
      padding: 20px;
      display: flex;
