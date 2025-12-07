@@ -163,7 +163,7 @@ img {
      display: block;
      /* background-color: #d8edff; */
      position: relative;
-     padding-bottom: 30px;
+     /* padding-bottom: 30px; */
      text-decoration: none;
      border-radius: 10px;
      color: #00274C;
@@ -174,7 +174,8 @@ img {
 .quick-links div a h3 {
      font-size: 16px;
      padding: 0 20px 0 20px;
-     font-weight: normal;
+     font-weight: bold;
+     /* font-weight: normal; */
 }
 
 .quick-links div a img {
@@ -183,28 +184,19 @@ img {
      padding: 30px 0 30px 0;
 }
 
-.quick-links div a ul{
-     /* display: none; */
-     transition: opacity 0.3s ease-out;
-     opacity: 0;
-     overflow: hidden;
-     height: 0;
-}
+
 
 .quick-links div a:hover ul,
 .quick-links div a:focus ul {
-     /* display: block; */
      opacity: 1;
-     min-height: 100%;
      align-content: center;
      height: auto;
      position: absolute;
      background-color: #fff;
      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
-     /* padding: 20px; */
-     margin: 0;
      border-radius: 10px;
      width: 100%;
+     top: 0;
 }
 
 .quick-links div a ul li{
@@ -434,5 +426,22 @@ footer a:visited {
 
      section {
           margin: 0;
+     }
+     .quick-links div a ul{
+          /* display: none; */
+          transition: opacity 0.3s ease-out;
+          opacity: 0;
+          overflow: hidden;
+          height: 0;
+     }
+     .quick-links div a {
+          padding-bottom: 30px;
+     }
+     .quick-links div a h3 {
+          font-weight: normal;
+     }
+     .quick-links div a:hover ul,
+     .quick-links div a:focus ul {
+          min-height: 100%;
      }
 }
