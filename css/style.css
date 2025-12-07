@@ -74,10 +74,16 @@ main {
      max-width: 1530px;
      margin: auto;
      margin-top: 120px;
+     padding-bottom: 20px;
 }
 
 img {
      object-fit: contain;
+}
+
+a {
+     text-decoration: none;
+     color: #00274C;
 }
 
 .material-symbols-outlined {
@@ -172,9 +178,7 @@ img {
      /* background-color: #d8edff; */
      position: relative;
      padding-bottom: 30px;
-     text-decoration: none;
      border-radius: 10px;
-     color: #00274C;
      text-align: center;
      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
 }
@@ -220,6 +224,11 @@ img {
      /* margin: 20px; */
      height: auto;
      border-radius: 10px;
+}
+
+.resources .card {
+     padding: 0px;
+     border-radius: 0px;
 }
 
 iframe,
@@ -332,7 +341,7 @@ footer a:visited {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #eee;
+  /* background-color: #eee; */
   color: #00274C;
   cursor: pointer;
   /* padding: 18px; */
@@ -340,20 +349,26 @@ footer a:visited {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 18px;
 }
 
-.collapsible, .card li a {
-     font-size: 16px;
-     padding: 18px;
+.collapsible-content,
+.collapsible,
+.card li a {
+     font-size: 18px;
+     padding: 15px;
 }
 
 .card li {
-     padding: 10px 0 10px 0;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     border-bottom: #d8edff 1px solid;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+.active,
+.collapsible:hover,
+.card li a:hover {
   background-color: #d8edff;
 }
 
