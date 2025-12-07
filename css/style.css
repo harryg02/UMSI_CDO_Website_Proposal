@@ -95,7 +95,7 @@ img {
      display: flex;
      justify-content: center;
      font-size: 20px;
-     padding: 10px;
+     padding: 20px;
      gap: 5px;
      background-color: white;
      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
@@ -209,7 +209,7 @@ img {
      background-color: #fff;
      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; /* shadow credit: https://getcssscan.com/css-box-shadow-examples */
      padding: 30px;
-     margin: 20px;
+     /* margin: 20px; */
      height: auto;
      border-radius: 10px;
 }
@@ -382,7 +382,7 @@ footer a:visited {
      .nav-dropdown {
           display: none;
           position: fixed;
-          top: 60px;
+          top: 130px;
      }
      main {
           max-width: 1530px;
@@ -400,8 +400,9 @@ footer a:visited {
 
 @media only screen and (min-width: 1024px) {
      main {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 20px;
      }
      header {
           display: flex;
@@ -409,9 +410,8 @@ footer a:visited {
           align-items: center;
           justify-content: space-between;
      }
-
-     section {
-          margin: 0;
+     .nav-dropdown {
+          top: 60px;
      }
      .quick-links div a ul{
           /* display: none; */
