@@ -81,9 +81,9 @@ main {
 footer > div {
      max-width: 1530px;
      margin: auto;
-     padding: 20px 0;
+     padding: 40px;
      display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-columns: 1fr;
 }
 
 footer a {
@@ -346,7 +346,7 @@ nav a.highlighted {
 }
 
 footer {
-     background-color: #00274C;
+     background-color: #000d18;
      color: #fff;
 }
 
@@ -491,7 +491,7 @@ footer .site-branding h3 {
      nav a {
           padding: 10px;
      }
-     footer div {
+     footer > div {
           grid-template-columns: 1fr 1fr;
      }
 
