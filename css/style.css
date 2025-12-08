@@ -59,7 +59,8 @@ header {
      z-index: 1;
 }
 
-header img {
+header img,
+footer img {
      width: 50px;
      height: 50px;
      padding: 10px;
@@ -75,6 +76,18 @@ main {
      margin: auto;
      margin-top: 120px;
      padding-bottom: 20px;
+}
+
+footer div {
+     max-width: 1530px;
+     margin: auto;
+     padding: 20px 0;
+     display: grid;
+     grid-template-columns: 1fr;
+}
+
+footer div ul li a {
+     color: white;
 }
 
 img {
@@ -345,6 +358,10 @@ footer a:visited {
      color: #FFCB05;
 }
 
+footer .site-branding h3 {
+     color: #fff;
+}
+
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   /* background-color: #eee; */
@@ -439,6 +456,7 @@ footer a:visited {
      }
      section {
           padding: 30px;
+
      }
      .column1Span2 {
           grid-column: 1 / span 2;
