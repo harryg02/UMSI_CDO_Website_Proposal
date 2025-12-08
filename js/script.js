@@ -1,3 +1,4 @@
+// Source: https://www.taniarascia.com/responsive-dropdown-navigation-bar/
 (function($) { // Begin jQuery
   $(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
@@ -22,6 +23,7 @@
   }); // end DOM ready
 })(jQuery); // end jQuery
 
+// Source: https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 function toggleMenu() {
   var menu = document.querySelector(".menu");
   if (menu.style.display != "block") {
@@ -31,7 +33,7 @@ function toggleMenu() {
   }
 }
 
-// Collapsible
+// Collapsible source: https://www.w3schools.com/howto/howto_js_collapsible.asp
 
 document.addEventListener('DOMContentLoaded', function() {
   var coll = document.getElementsByClassName("collapsible");
