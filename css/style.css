@@ -78,15 +78,15 @@ main {
      padding-bottom: 20px;
 }
 
-footer div {
+footer > div {
      max-width: 1530px;
      margin: auto;
      padding: 20px 0;
      display: grid;
-     grid-template-columns: 1fr;
+     grid-template-columns: 1fr 1fr 1fr;
 }
 
-footer div ul li a {
+footer a {
      color: white;
 }
 
@@ -354,10 +354,6 @@ footer p {
      text-align: center;
 }
 
-footer a:visited {
-     color: #FFCB05;
-}
-
 footer .site-branding h3 {
      color: #fff;
 }
@@ -494,6 +490,9 @@ footer .site-branding h3 {
      }
      nav a {
           padding: 10px;
+     }
+     footer div {
+          grid-template-columns: 1fr 1fr;
      }
 
 }
